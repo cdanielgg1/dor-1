@@ -13,19 +13,61 @@
        height: 500px;
      }
     </style>
-    <!-- Your styles here -->
+
     <style>
+   
+   .box {
+   position: fixed;
+  right: 50%;
+  top: 0%;
+  width: 100px;
+  height: 50px;
+  background: red;
+  color: black;
+  overflow: hidden;
+}
+
+.two {
+ width: 100px;
+  height: 50px;
+  position: fixed;
+  top: 0%x;
+  left: 0%;
+  background: blue;
+  overflow: scroll;
+}
+ .container{
+  position: relative;
+
+  }
+
+.bottomleft {
+position: absolute;
+  width: 500px;
+  height: auto;
+  background:grey;
+  
+}
+.outer{
+width: 100%;
+  height: auto;
+  background:pink;
+  color:white;
+  }
     </style>
   </head>
   <body>
     <h1>Activity 2: CSS positioning</h1>
     <p>Style the following blocks following the instructions inside</p>
-    <div id="first_block"><ul><li>Size: 100x50px</li><li>background: red</li><li>Position: top right, fixed to the document</li><li>Hide any content that overflows div dimensions</li></ul></div>
-    <div id="second_block"><ul><li>Size: 100x50px</li><li>Background: blue</li><li>Position: top left, fixed to the window</li><li>Show scroll bars when content overflows div dimensions</li></ul></div>
-    <div id="container">
+    <div id="first_block" class="box"><ul><li>Size: 100x50px</li><li>background: red</li><li>Position: top right, fixed to the document</li><li>Hide any content that overflows div dimensions</li></ul></div>
+    
+    <div id="second_block" class="two"><ul><li>Size: 100x50px</li><li>Background: blue</li><li>Position: top left, fixed to the window</li><li>Show scroll bars when content overflows div dimensions</li></ul></div>
+    <div id="container" class="container">
       I'm containing some blocks
-      <div class="third_block"><ul><li>width 50%</li><li>background: grey</li><li>Position: on the bottom left corner on the container (container) div</li></ul></div>
-      <div class="fourth_block"><ul><li>width 50%</li><li>background: pink</li></ul></div>
+      
+      <div id="third_block" class="bottomleft"><ul><li>width 50%</li><li>background: grey</li><li>Position: on the bottom left corner on the container (container) div</li></ul></div>
+      
+      <div id="fourth_block" class="outer"><ul><li>width 50%</li><li>background: pink</li></ul></div>
     </div>
   </body>
 </html>

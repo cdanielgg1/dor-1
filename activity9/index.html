@@ -12,10 +12,28 @@
   <body>
     <h1>Activity 9: Responsive images</h1>
     <p>1. Using &lt;img srcset...&gt; make a responsive image that changes depending on the size of the page, up to 3 images.:</p>
-    <!-- 1st activity here-->
+    <p><!-- 1st activity here-->
+      
+      <img src="Dibujo15-hd.jpg"
+      
+srcset="Dibujo15-300x428.jpg 1x, Dibujo15-x2.jpg 2x,
+Dibujo15-hd.jpg 3x">
+      
+    </p>
     <p>2. Using &lt;picture&gt; stuff make a responsive image that changes depending on the size of the page, up to 3 images.:</p>
-    <!-- 2nd activity here-->
+      <!-- 2nd activity here-->
+      
+      <picture>
+<source media="(max-width: 700px)" sizes="(max-width: 500px) 50vw, 10vw"
+srcset="Dibujo15-300x428.jpg 138w, Dibujo15-300x428.jpg 138w">
 
-    <p><a href="https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">Need help?</a><a href="https://www.youtube.com/watch?v=7UMNQrUF2ps">Video</a></p>
+<source media="(max-width: 1400px)" sizes="(max-width: 1000px) 100vw, 50vw"
+srcset="Dibujo15-x2.jpg 416w, Dibujo15-hd.jpg 416w">
+
+<img src="Dibujo15-300x428.jpg" alt="Unicornio">
+</picture>
+      
+    </p>
+  <p><a href="https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">Need help?</a><a href="https://www.youtube.com/watch?v=7UMNQrUF2ps">Video</a></p>
   </body>
 </html>

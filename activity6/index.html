@@ -14,18 +14,77 @@
        max-width: 70px;
      }
     </style>
-
-    <!-- Your styles here -->
+	    <!-- Your styles here -->
     <style>
-    </style>
+		
+		#flexcontainer1{
+		display: flex;
+		}
+		
+		 #flexcontainer1 .item{
+		 display: flex;
+  		justify-content: center;
+  		align-items: center;
+  		height:auto;
+		  width:100%;
+		}
+		
+		#flexcontainer2{
+		display: flex;
+		flex-direction:row;
+		}
+		
+      #flexcontainer2 .item:nth-child(1){ order: 5; }
+		.item:nth-child(2){ order: 1; }
+      .item:nth-child(3){ order: 4; }
+      .item:nth-child(4){ order: 3; }
+      .item:nth-child(5){ order: 2; }
+      
+      #flexcontainer3{
+		display: flex;
+       
+       
+		}
+		
+      #flexcontainer3 .item:nth-of-type(1) {flex-grow: 1;}
+.item:nth-of-type(2) {flex-grow: 2;}
+.item:nth-of-type(3) {flex-grow: 3;}
+      
+      #flexcontainer4{
+        display:flex;
+      
+      }
+       #flexcontainer4 .item{
+        display:flex;
+        justify-content: center;
+  		align-items: center;
+      
+      }
+      #flexcontainer6{
+          display: flex;
+  align-items: center;
+  justify-content: center;
+}
+      }
+       #flexcontainer6 .item{
+        max-width: 50%;
+      
+      }
+      
+      
+		
+       
+      </style>
   </head>
   <body>
     <h1>Activity 6: Flex</h1>
     <p>CSS Flex is awesome, so it's time to check it out. <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">This page</a> is a great reference on how to use flexbox. Once you'd had a look at it complete the following instructions:</p>
     <div id="flexcontainer1"><div class="item">show</div><div class="item">this</div><div class="item">divs</div><div class="item">horizontally</div></div>
+	  
     <p>Using flex and nth-child selector) order and show horizontally:</p>
     <div id="flexcontainer2"><div class="item">5. flex</div><div class="item">1. Order</div><div class="item">4. using</div><div class="item">3. divs</div><div class="item">2. this</div></div>
     <p>Using flex show horizontally and let them grow:</p>
+	  
     <div id="flexcontainer3"><div class="item">I'm normal</div><div class="item">I'm Twice as big as normal</div><div class="item">I'm three times bigger then normal</div></div>
     <p>Center the following divs:</p>
     <div id="flexcontainer4"><div class="item">all</div><div class="item">together</div></div>

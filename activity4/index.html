@@ -20,6 +20,37 @@
 
     <!-- Your styles here -->
     <style>
+    #first-block, {
+    padding: 10px;
+    margin: 10px;
+  float: left;
+  
+}
+#second-block {
+    padding: 10px;
+    margin: 10px;
+  float: left;
+  
+}
+#third-block{
+
+  float: right;
+  padding: 10px;
+  margin: 10px;
+
+
+}
+#fourth-block {
+  float: right;
+  padding: 10px;
+  margin: 10px;
+ 
+ 
+ 
+  
+
+}
+
     </style>
   </head>
   <body>
@@ -28,9 +59,11 @@
       <div id="second-block">Left second</div>
       <div id="third-block">Rigth second</div>
       <div id="fourth-block">Rigth first</div>
+      
       <p class="first-paragraph">This text is surrounded by boxes</p>
-      <p class="second-paragraph">This text does not let left boxed to surround them. This text does not let left boxed to surround them. This text does not let left boxed to surround them. This text does not let left boxed to surround them. </p> 
-      <p class="third-paragraph">This text does not let any box to surround it</p> 
+      
+      <p style="clear:both;" class="second-paragraph">This text does not let left boxed to surround them. This text does not let left boxed to surround them. This text does not let left boxed to surround them. This text does not let left boxed to surround them. </p> 
+      <p style="clear:left;" class="third-paragraph">This text does not let any box to surround it</p> 
     </p>
   </body>
 </html>

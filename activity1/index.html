@@ -10,13 +10,31 @@
       display:none;
     }
     <style>
+      div.a {
+  width: auto;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+div.b {
+  width: 150px;
+  font-weight: bold;
+  background: red;
+  margin-bottom: 1em;  
+}
+
+div.c {
+  width: 50%;
+  color: blue;
+  padding: 1rem;  
+}
     </style>
   </head>
   <body>
     <h1>Activity 1: CSS styling</h1>
     <p>Style the following blocks following the instructions inside</p>
-    <div id="first_block"><ul><li>Full width</li><li>Border 1px black</li><li>Separation with the following block 10px</li></ul></div>
-    <div id="second_block"><ul><li>width 50%</li><li>Background red</li><li>Text in bold</li><li>Separation with the following block 1em</li></ul></div>
-    <div class="third_block"><ul><li>width 50% of the page size</li><li>Text color blue</li><li>Separation with the content inside 1rem</li></ul></div>
+    <div id="first_block" class="a"><ul><li>Full width</li><li>Border 1px black</li><li>Separation with the following block 10px</li></ul></div>
+    <div id="second_block" class="b"><ul><li>width 50%</li><li>Background red</li><li>Text in bold</li><li>Separation with the following block 1em</li></ul></div>
+    <div id="third_block" class="c"><ul><li>width 50% of the page size</li><li>Text color blue</li><li>Separation with the content inside 1rem</li></ul></div>
   </body>
 </html>
