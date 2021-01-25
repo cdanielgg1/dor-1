@@ -21,13 +21,13 @@ if($_POST) {
     .'From: ' . $visitor_email . "\r\n";
      
     if(mail($recipient,$message, $headers)) {
-        echo "<p>Thank you for contacting us, $name. You will get a reply within 24 hours.</p>";
+        echo "<p>Gracias contactaremos, $name. Contestaremos en 48 horas.</p>";
     } else {
-        echo '<p>We are sorry but the email did not go through.</p>';
+        echo '<p>Correo electronico no recibido.</p>';
     }
      
 } else {
-    echo '<p>Something went wrong</p>';
+    echo '<p>Algo ha ido mal.</p>';
 }
  
 ?>
