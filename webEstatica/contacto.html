@@ -1,112 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
-<title>Tienda Online</title>
-	<meta name="description" content="web estatica con formulario de contacto">
-		<meta name="author" content="carlos daniel">
-			
-<style>
-
-
-	/*formulario de contacto*/
-	div.elem-group {
-  margin: 40px 0;
-}
-	label {
-  display: block;
-  font-family: 'Aleo';
-  padding-bottom: 4px;
-  font-size: 1.25em;
-}
-	input, select, textarea {
-  border-radius: 2px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  font-size: 1.25em;
-  font-family: 'Aleo';
-  width: 500px;
-  padding: 8px;
-}
-
-textarea {
-  height: 250px;
-}
-
-button {
-  height: 50px;
-  background: green;
-  color: white;
-  border: 2px solid darkgreen;
-  font-size: 1.25em;
-  font-family: 'Aleo';
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-
-
-}
-</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <LINK REL="stylesheet" TYPE="text/css" HREF="estilos.css">
 </head>
-<body style="font-family:Verdana;color:#aaaaaa;">
-
- <header>
-  
- <div id="logo">
+ 
+<body>
+ 
+<div class="container">
+ 
+  <!-- Empieza Header -->
+	<header>
+		 <div id="logo">
         <img src="images/Dibujo15-300x428.jpg" alt="Vestidos de lujo" width="111" height="64">
         <h1>Vesti2dLujo</h1>
     </div>
-</header>
-
-<div style="overflow:auto">
-   <nav class="menu-main">
-   
-      <a href="index.html">inicio</a>
-      <a href="nosotros.html">nosotros</a>
-	   <a href="catalogo.html">catalogo</a>
-  <a href="contacto.html">Contacto</a>
-   
-    </nav>
-  </div>
-
-  <div class="main">
-    <h2>Formulario de contacto</h2>
-    <p>Para cualquier información.</p>
-	  <form action="contacto.php" method="post">
-  <div class="elem-group">
-    <label for="name">Nombre</label>
-    <input type="text" id="name" name="name" placeholder="carlos">
-  </div>
-  <div class="elem-group">
-    <label for="email">E-mail</label>
-    <input type="email" id="email" name="email" placeholder="cdanielgg@hotmail.com" required>
-		  </div>
-  <div class="elem-group">
-    <label for="message">Mensaje</label>
-    <textarea id="message" name="visitor_message" placeholder="Escriba su mensaje." required></textarea>
-  </div>
-  <button type="submit">Enviar mensaje</button>
+	</header>
+<!-- Finaliza Header -->
+ 
+<!-- Empieza Menu -->
+	<nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="nosotros.html">Nosotros</a></li>
+			<li><a href="catalogo.html">Catalogo</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+<!-- Finaliza Menu -->
+ 
+<!-- Empieza Seccion de contenido -->
+	<section>
+		<h1>Vestidos de lujo para tod@s</h1>
+ 
+  <h3>Formulario de contacto</h3>
+    <article>
+      <p>Si tiene cualquier duda o sugerencia, puede contactar con nosotros atravez del formulario. </p>
+      <section class="formulario">
+   <form action="contact.php" method="post">
+<label for="nombre">Nombre:</label>
+ <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required="" />
+ <label for="email">Email:</label>
+ <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
+ <label for="mensaje">Mensaje:</label>
+ <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required=""></textarea>
+ <input id="submit" type="submit" name="submit" value="Enviar" />
 </form>
-  </div>
 
- <div class="right">
-  <img src="images/badge-calidad.png" width="100" height="100" hspace="5" vspace="2" style="float: center;" />
-    <h2>Calidad</h2>
-    <p>Las mejores marcas del mercado a su disposición comodamente desde su hogar</p>
-  </div>
-</div>
-  
-  <footer>
-  
-<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">  <addres>
-       Autor: carlos gil garcia<br>
-    correo: losdelcampo@gmail.com
-    </addres>
-  <p>© copyright Vesti2dLujo.com<p></div>
+  </section>
+      
+  <br>
+    </article>
     
-  </footer>
+  
+	</section>
+<!-- Finaliza Seccion de contenido -->
+ 
+<!-- Empieza barra lateral -->
+	<aside>
+    <h2>La calidad</h2>
+    <p><img src="images/badge-calidad.png" alt="TrajeAzul." width="129" height="109" class="derecha"> Nuestra calidad nos avala, desde hace mas de 20 años, nos dedicamos al diseño y confeccion de vestidos de lujo en Las palmas .</p>
+    <br> nuestros clientes nuestra mayor satisfaccion.
+  </aside>
+<!-- Finaliza barra lateral -->
+ 
+<!-- Empieza pie de pagina -->
+	<footer>
+		<a href="http://www.web4u.es">Diseño web | web4u.es</a>
+	</footer>
+<!-- Empieza pie de pagina -->
+ 
+</div>
 </body>
 </html>

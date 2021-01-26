@@ -81,7 +81,71 @@ img.izquierda {
 img.derecha {
   float: right;
 }
+/*Formulario de correo*/
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+.formulario {
+    display:block;
+    margin:0 auto;
+    width:510px;
+    color: #666666;
+    font-family:Arial;
+}
+form {
+    margin:0 auto;
+    width:400px;
+}
  
+input, textarea {
+    width:380px;
+    height:27px;
+    background:#666666;
+    border:2px solid #f6f6f6;
+    padding:10px;
+    margin-top:5px;
+    font-size:10px;
+    color:#ffffff;
+}
+ 
+textarea {
+    height:150px;
+}
+ 
+#submit {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+/*Galeria de imagenes*/
+.thumb {
+  max-width:150px;
+  max-height:150px;
+}
+
+.foto {
+  width:33.33%;
+  border:0px dotted lightgrey;
+  padding:0px;
+  margin:0px;
+  
+}
+
+.principal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.clear {
+  clear:both;
+}
+
 /* pantalla maximo 980px */
 @media screen and (max-width:980px) {
   .container {
