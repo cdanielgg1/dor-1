@@ -1,8 +1,13 @@
+body{
+ background: cornflowerblue;
+   
+}
+
 .container {
   width:1080px;
   margin:0px auto;
   font-size:1em;
-  font-family: "Arial", Georgia, Serif;
+  font-family: "Arial", Helvetica, sans-serif;
   font-size: 15px;
 }
 header {
@@ -10,6 +15,20 @@ header {
   border: 1px solid #ccc;
   background: #fafafa
 }
+h1, h2, h3 {
+  color: #8A8E27;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align:center;
+}
+
+h1 { font-size: 2em; color:#599DC7  }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.2em;text-decoration: underline; }
+
+
+p { font: 16px arial, helvetica, sans-serif; }
+
 a {
   color: #333;
   text-decoration: none;
@@ -77,9 +96,11 @@ footer a {
 }
 img.izquierda {
   float: left;
+  padding:10px;
 }
 img.derecha {
   float: right;
+  padding:10px;
 }
 /*Formulario de correo*/
 label {
@@ -102,7 +123,7 @@ form {
 input, textarea {
     width:380px;
     height:27px;
-    background:#666666;
+    background:#8b9ea2;
     border:2px solid #f6f6f6;
     padding:10px;
     margin-top:5px;
