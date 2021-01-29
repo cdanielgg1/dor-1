@@ -1,10 +1,33 @@
-body{
- background: cornflowerblue;
-   
+html, body{
+  height:100%;
+  margin:0;
+  display: flex;
+  flex-direction: column;
+}
+
+.all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.all-browsers > h1, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+
+.browser {
+  background: white;
+  overflow:hidden;
+}
+
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
 }
 
 .container {
-  width:1080px;
+  width:auto;
   margin:0px auto;
   font-size:1em;
   font-family: "Arial", Helvetica, sans-serif;
@@ -19,15 +42,18 @@ h1, h2, h3 {
   color: #8A8E27;
   font-weight: normal;
   font-family: Arial, Helvetica, sans-serif;
-  text-align:center;
+  text-align:left;
 }
 
-h1 { font-size: 2em; color:#599DC7  }
+h1 { font-size: 2em; color:#599DC7 text-align:center; }
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.2em;text-decoration: underline; }
 
 
 p { font: 16px arial, helvetica, sans-serif; }
+p.a {
+  font-family: "Times New Roman", Times, serif;
+}
 
 a {
   color: #333;
@@ -42,12 +68,16 @@ section {
   width: 70%;
   background: #fafafa;
   border: 1px solid #ccc;
+   justify-content: center;
+  align-content: center;
 }
 aside {
   float: right;
   width: 25%;
   background:#ccc;
   color: #333;
+
+ 
 }
 nav {
   overflow: hidden;
@@ -66,8 +96,8 @@ nav ul {
 nav ul li {
   display: inline-block;
   float: none;
-  padding:3px 10px;
-  margin:2px;
+  padding:10px 20px;
+  margin:5px 20px;
   background:#fafafa;
   -moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;border-radius:3px;
 }
@@ -87,13 +117,13 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 10px 0px 10px 0px;
   background-color: #333;
   text-align: center;
 }
 footer a {
   color: #fff;
 }
+
 img.izquierda {
   float: left;
   padding:10px;
@@ -101,6 +131,8 @@ img.izquierda {
 img.derecha {
   float: right;
   padding:10px;
+  overflow:hidden;
+  
 }
 /*Formulario de correo*/
 label {
@@ -190,7 +222,7 @@ textarea {
   aside {
     margin-top:5px;
     background:#333;
-    color: #fff;
+   	overflow: hidden;
   }
   nav ul {
     float:none;
@@ -204,7 +236,7 @@ textarea {
   aside {
     display:block;
     background:#333;
-    color: #fff;
+   
     font-size:1.5em;
   }
   nav, section {
@@ -222,4 +254,5 @@ textarea {
   nav ul li {
     float:none;
   }
-}
+
+
