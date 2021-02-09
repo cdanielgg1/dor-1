@@ -8,7 +8,7 @@ html, body{
 .all-browsers {
   margin: 0;
   padding: 5px;
-  background-color: lightgray;
+  background-color: #01525d;
 }
 
 .all-browsers > h1, .browser {
@@ -29,9 +29,8 @@ html, body{
 .container {
   width:auto;
   margin:0px auto;
-  font-size:1em;
   font-family: "Arial", Helvetica, sans-serif;
-  font-size: 15px;
+  ;
   padding-bottom:20px;
 }
 header {
@@ -41,10 +40,10 @@ header {
 }
 .logo img {
   float: left;
-  width: 150px;
-  height: 120px;
+  width: 130px;
+  height: 100px;
   background: #f4f7f600;
-  margin-right:100px;
+  
   margin-left:100px;
  
 }
@@ -75,13 +74,9 @@ h3 { font-size: 1.2em;text-decoration: underline; margin-left:15px; }
 
 
 p { font: 18px arial, helvetica, sans-serif;
-	display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px; }
+	; }
 p.a {
-  font: 16 px Verdana, Geneva, sans-serif;
+  font: 17 px Verdana, Geneva, sans-serif;
 }
 
 a {
@@ -91,29 +86,29 @@ a {
 section,aside {
   padding: 10px;
   margin:20px;
+  background: #999df2;;
+  border: 3px solid #4e7bed;
   -moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;border-radius:3px;
 }
 section {
   float: left;
   width: 70%;
-  background: #fafafa;
-  border: 1px solid #ccc;
-   justify-content: center;
+    justify-content: center;
   align-content: center;
   margin-bottom:100px;
 }
 aside {
   float: right;
-  width: 20%;
-  background:#ccc;
+  width: 22%;
+  background:#01525d;
   color: #333;
-   border: 1px solid #ccc;
+   
 
  
 }
 nav {
   overflow: hidden;
-  background:#444;
+  background:#083b66;
   margin-top: 0.5%;
   margin-bottom: 0.5%;
 }
@@ -149,7 +144,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #333;
+  background-color: #083b66;
   text-align: center;
 }
 footer a {
