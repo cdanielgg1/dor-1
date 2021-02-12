@@ -30,7 +30,6 @@ html, body{
   width:auto;
   margin:0px auto;
   font-family: "Arial", Helvetica, sans-serif;
-  ;
   padding-bottom:20px;
 }
 header {
@@ -43,8 +42,7 @@ header {
   width: 130px;
   height: 100px;
   background: #f4f7f600;
-  
-  margin-left:100px;
+   margin-left:100px;
  
 }
 
@@ -63,21 +61,22 @@ header {
 
 h1, h2, h3 {
   color: #8A8E27;
-  font-weight: normal;
-  sans-serif;
+  font-weight: bold;
   text-align:left;
 }
 
-h1 { font-size: 2em; color:#599DC7 text-align:center; }
-h2 { text-decoration:underline }
-h3 { font-size: 1.2em;text-decoration: underline; margin-left:15px; }
+h1 { font-size:35px; color:#599DC7 text-align:center; }
+h2 { text-decoration:underline; font-size:30px; }
+h3 { font-size: 25px;text-decoration: underline; margin-left:15px; }
 
 
-p { font: 18px arial, helvetica, sans-serif;
-	; }
-p.a {
-  font: 17 px Verdana, Geneva, sans-serif;
-}
+p {
+	padding: 5px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	line-height: normal;
+	 }
+
 
 a {
   color: #333;
@@ -86,7 +85,7 @@ a {
 section,aside {
   padding: 10px;
   margin:20px;
-  background: #999df2;;
+  background: #999df2;
   border: 3px solid #4e7bed;
   -moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;border-radius:3px;
 }
@@ -102,6 +101,7 @@ aside {
   width: 22%;
   background:#01525d;
   color: #333;
+  margin-bottom:50px;
    
 
  
@@ -201,7 +201,12 @@ div.desc {
   .responsive {
     width: 100%;
   }
-}
+ nav ul {
+    display: grid;
+    text-align: center;
+    float: none;
+    width:100%;
+  }
 
 .clearfix:after {
   content: "";
@@ -332,4 +337,3 @@ input[type=submit]:hover {
   nav ul li {
     float:none;
   }
-
