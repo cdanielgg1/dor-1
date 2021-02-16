@@ -1,0 +1,196 @@
+/*p{font-family: 'Roboto', sans-serif;
+font-size:16px;}
+p.cursiv {font-family: cursive;}
+
+h1 {font-family: Helvetica, Geneva, rial,
+        SunSans-Regular, sans-serif;
+		font-size:1.2em; font-weight:bold; 			
+		text-decoration:underline; text-align:center;}
+h2 {font-family: Helvetica, Geneva, rial,
+        SunSans-Regular, sans-serif;font-size:1.1em; font-weight:bold; text-decoration:none; text-align:center;}*/
+
+@import "susy";
+.cabecera-wrapping {
+    height: auto;
+    opacity: 80%;
+    background-color: #1f2021;
+}
+
+.lead {
+    color: white;
+}
+
+h1 {
+    padding-top: 50px;
+    text-decoration: overline underline;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cabecera {
+    text-align: center;
+    background-image: url("../assets/backgrounds/bg-nfc.jpg");
+    border-left: 1px solid #808080;
+    border-right: 1px solid #808080;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.item {
+    position: auto;
+    height: 200px;
+    background-color: blue;
+    border-style: solid;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #808080;
+}
+
+.parallax {
+    background: #fff fixed no-repeat 60% 60%;
+    background-size: cover;
+}
+
+#seccion0 {
+    background-image: url("../assets/backgrounds/bg-nfc.jpg");
+}
+
+#seccion1 {
+    background-image: url("../assets/backgrounds/bg-nfc.jpg");
+}
+
+#seccion2 {
+    background-color: white;
+}
+
+#seccion3 {
+    background-image: url("../assets/backgrounds/bg-nfc.jpg");
+}
+
+.espacioNavParallax {
+    background-image: url("../assets/backgrounds/bg-nfc.jpg");
+}
+
+#seccion4 {
+    display: inline-block;
+    text-align: center;
+}
+
+.ampliable:hover {
+    width: 100%;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.ampliable {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transition: width 2s, height 2s;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+li,
+ul,
+ol {
+    color: blue;
+}
+
+.nav-link {
+    color: white;
+}
+
+.userImg {
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.espacioNav {
+    height: 90px;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #808080;
+}
+
+
+/*EFECTO PARA AMPLIAR TARJETAS */
+
+.zoom-effect-container {
+    float: left;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.zoom-card {
+    position: auto;
+    top: 0;
+    left: 0;
+}
+
+.zoom-card {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+.zoom-effect-container:hover .zoom-card {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+@media screen and (max-width: 936px) {
+    .card-img-wrapping {
+        display: none;
+    }
+}
+
+.boton {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: #318aac;
+    border: 2px solid;
+    border-color: #318aac;
+    position: relative;
+}
+
+.boton:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
+
+.keyword {
+    color: rgb(226, 220, 26);
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(226, 220, 26);
+}

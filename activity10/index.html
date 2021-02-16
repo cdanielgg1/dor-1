@@ -32,10 +32,15 @@
        background-color: black;
        border-radius: 6px;
        color: #333;
+        text-align:center;
+        padding:3px;
+        margin-bottom: 20px;
+        
      }
 
      .topmenu-submenu{
        float:left;
+       background-color: black;
      }
      #topmenu1 {
        height: 30px;
@@ -45,7 +50,7 @@
   <body>
     <span class="huge">Activity 10: Accesibility</span>
     <p>This is a nightmare webpage in terms of <img src="accesibility.png" /> change <span class="highlight">anything you need</span> to make it shine.</p>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row" >
         <div class="col-sm-3" id="topmenu1">
           <div class="topmenu-option">
@@ -74,16 +79,79 @@
           <span onclick="showContent2()">View content 2</span>
         </div>
         <div class="col-sm-8" id="content">
-          DEFAULT PAGE
-          Lorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut labore et dolore magna aliqua veniam, quis nostrud exercitation ullamcorpor s commodo consequat. Duis autem vel eum irrure esse molestiae consequat, vel illum dolore eu fugi et iusto odio dignissim qui blandit praesent luptat exceptur sint occaecat cupiditat non provident, deserunt mollit anim id est laborum et dolor fuga distinct. Nam liber tempor cum soluta nobis elige quod maxim placeat facer possim omnis volupt
+          <div class="card text-white bg-primary mb-3"  style="max-width: 100%;">
+          
+            <div class="card-header">Peluquerias con estilo</div>
+            <div class="card-body">
+              <h5 class="card-title">Servicios a domicilio</h5>
+              <p class="card-text">Nuestras profesionales del cabello y la estetica, estaran dispoibles las 24 horas del dia para cualquier necesidad de nuestros clientes</p>
 <br><br>
-Lorem ipsum dolor si amet, consectetur adipiscing incidunt ut labore et dolore magna aliquam erat nostrud exercitation ullamcorper suscipit laboris nis duis autem vel eum irure dolor in reprehenderit i, dolore eu fugiat nulla pariatur. At vero eos et accusa praesant luptatum delenit aigue duos dolor et mole provident, simil tempor sunt in culpa qui officia de fuga. Et harumd dereud facilis est er expedit disti eligend optio congue nihil impedit doming id quod assumenda est, omnis dolor repellend. Temporibud
+            </div>
+          </div>
+          
+             <div class="card text-white bg-primary mb-3" style="max-width: 100%;">
+          
+            <div class="card-header">Zonas de relax</div>
+            <div class="card-body">
+              <h5 class="card-title">Centro especializados</h5>
+            <p class="card-text">En nuestros centros de relax, disfrutara de una estancia con todos los tratamientos incluidos. Piscinas de barro y aguas termales</p>
 <br><br>
-Lorem ipsum dolor si amet, consectetur adipiscing incidunt ut labore et dolore magna aliquam erat nostrud exercitation ullamcorper suscipit laboris nis duis autem vel eum irure dolor in reprehenderit i dolore eu fugiat nulla pariatur. At vero eos et accus praesant luptatum delenit aigue duos dolor et mol provident, simil tempor sunt in culpa qui officia de fuga. Et harumd dereud facilis est er expedit disti eligend oprio congue nihil impedit doming id quod assumenda est, omnis dolor repellend. Temporibud
+            </div>
+          </div>
+             <div class="card text-white bg-primary mb-3" style="max-width: 100%;">
+          
+            <div class="card-header">Estetica del siglo XXI</div>
+            <div class="card-body">
+              <h5 class="card-title">Investigación propia</h5>
+            <p class="card-text">Contamos con licencidos en ingenieria farmaceutica investigando constantemente las mejoras de la salud de nuestros clientes y el disfute de la juventud en sus cuerpos.</p>
 <br><br>
+            </div>
+          </div>
+          
         </div>
       </div>
-    </div>
+    
+ <footer class="bg-light text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <form action="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-auto mb-4 mb-md-0">
+          <p class="pt-2"><strong>Sign up for our newsletter</strong></p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-5 col-12 mb-4 mb-md-0">
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="form5Example2" class="form-control" />
+            <label class="form-label" for="form5Example2">Email address</label>
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-auto mb-4 mb-md-0">
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary mb-4">Subscribe</button>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </form>
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://web4u.es/">web4u.es</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -109,11 +177,11 @@ Lorem ipsum dolor si amet, consectetur adipiscing incidunt ut labore et dolore m
       }
       function showContent1(){
         var content = document.getElementById('content');
-        content.innerHTML = '<span class="important" style="color:#fffc16; font-size:2em;">This is the first content:<br/><img src="content1.png"></span><h1>and lot more</h1>Lorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut laboreLorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut labore<h1>content</h1><h4>is</h4><h4>important</h4>'
+        content.innerHTML = '<span class="important" style="color:#fffc16; font-size:2em;">This is the first content:<br/><img src="content1.png"></span><h1>and lot more</h1><div class="row"><div class=col-sm-6 col-md-4"><div class="thumbnail"><img src="..." alt="..."><div class="caption"><h3>etiqueta</h3><p>...</p><p><a href="#" class="btn btn-primary" role="button">Button</a><a href="#" class="btn btn-default" role="button">Buton</a></p></div></div></div></div>Lorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut laboreLorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut labore<h1>content</h1><h4>is</h4><div class="jumbotron"><h1>Hello</h1><p>...</p><p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p></div>'
       }
       function showContent2(){
         var content = document.getElementById('content');
-        content.innerHTML = '<b>Lorem ipsum dolor sit amet</b>, consectetur adipisci tempor incidunt ut labore et dolore magna aliqua veniam, quis nostrud exercitation ullamcorpor s commodo consequat. Duis autem vel eum irrure esse molestiae consequat, vel illum dolore eu fugi et iusto odio dignissim qui blandit praesent luptat exceptur sint occaecat cupiditat non provident, deserunt mollit anim id est laborum et dolor fuga distinct. Nam liber tempor cum soluta nobis elige quod maxim placeat facer possim omnis volupt'
+        content.innerHTML = '<b>Donde localizarnos</b>, Puede localizanos muy cerca de la calle amansio en la'
       }
     </script>
   </body>
