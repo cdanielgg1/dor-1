@@ -16,14 +16,8 @@
      #flexcontainer5 .item{
        max-width: 70px;
      }
-     .huge{
-       font-size: 2em;
-       font-weight: bold;
-     }
-     .highlight{
-       background-color: #DD0000;
-       color: red;
-     }
+  
+    
      img{
        vertical-align: middle;
      }
@@ -46,10 +40,6 @@
      #topmenu1 {
        height: 30px;
      }
-	 body{
-		 font-family:Arial, Helvetica, sans-serif;
-		 
-		 }
     </style>
   </head>
   <body>
@@ -97,15 +87,15 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner">
+ <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="Imagenes/slider1.jpg" alt="First slide" width="1200" height="400" class="d-block w-100">
+      <img class="d-block w-100" src="Imagenes/slider1.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img src="Imagenes/slider2.jpg" alt="Second slide" width="561" height="400" class="d-block w-100">
+      <img class="d-block w-100" src="Imagenes/slider2.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img src="Imagenes/slider3.jpg" alt="Third slide" width="696" height="400" class="d-block w-100">
+      <img class="d-block w-100" src="Imagenes/slider3.jpg" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -118,40 +108,46 @@
   </a>
 </div>
 
-      
-        <div class="col-sm-12" id="content">
+     
+         <div class="col-sm-12" id="content">
           <div class="card text-white bg-primary mb-3"  style="max-width: 100%;">
           
-            <div class="card-header"><h2>Servicios de viajes</h2></div>
+            <div class="card-header">Servicios de viajes</div>
             <div class="card-body">
               <h5 class="card-title">Servicios a domicilio</h5>
               <p class="card-text">Le recogeremos en su domicilio y lo trasladaremos desde y hasta el aeropuerto mas cercano a su hotel, tambien disponemos de recogida en hoteles y campos de golf. Servicio solo disponible para socios vip. </p>
 <br><br>
             </div>
           </div>
+            <div class="row">
+  <div class="col-sm-12 col-md-4">
+    
+    <div class="thumbnail">
+      <img src="Imagenes/hotel.jpg" alt="hoteles" width="374" height="250">
+      <div class="caption">
+        <h3>Viajes de lujo</h3>
+        <p>Nuestros clientes estan especialmente satisfechos de nuestros servicios, los hoteles de la cadena travelflex estan disponible en todos los continentes, disponiendo de tarifas VIP y tarifas VIP-GOLD para nuestros clientes mas exigentes.</p>
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
           
+         
+           
              <div class="card text-white bg-primary mb-3" style="max-width: 100%;">
           
-            <div class="card-header"><h2>Zonas de relax</h2></div>
+            <div class="card-header">Viajes del siglo XXI</div>
             <div class="card-body">
-              <h5 class="card-title">Centro especializados</h5>
-            <p class="card-text">En nuestros centros de relax, disfrutara de una estancia con todos los tratamientos incluidos. Le recogemos en su domicilio y lo trasladamos al aeropuerto directamente hacia las piscinas de barro y aguas termales que disponemos en nuestras instalaciones.</p>
-<br><br>
-            </div>
-          </div>
-          <div class="jumbotron"><h1>Bienvenidos</h1><p>al futuro de los viajes comerciales y de ocio. La aventura del vivir los tiempos modernos, disfurtando de su tiempo libre.</p><p>La calidad nos avala, nuestras instalaciones centrales estan situadas en las Islas Canarias, entorno privilegiado a las orillas del oceano atlántico. </p><p><a class="btn btn-primary btn-lg" href="contacto.html" role="button">Saber más</a></p></div>
-             <div class="card text-white bg-primary mb-3" style="max-width: 100%;">
-          
-            <div class="card-header"><h2>Viajes del siglo XXI</h2></div>
-            <div class="card-body bg-info text-dark">
               <h5 class="card-title">Agencia propia</h5>
-            <p class="card-text">Contamos con agencia propia, no necesitamos de intermediarios para poder realizar todos los proyectos de su viaje de ensueño. Cualquier solicitud de información sobre el trato VIP, puede consultarlo con la agencía.</p>
+            <p class="card-text">Contamos con licencidos en ingenieria farmaceutica investigando constantemente las mejoras de la salud de nuestros clientes y el disfute de la juventud en sus cuerpos.</p>
 <br><br>
             </div>
           </div>
           
         </div>
-      </div>
+  
     
  <footer class="bg-light text-center text-lg-start">
   <!-- Grid container -->
@@ -161,7 +157,7 @@
       <div class="row">
         <!--Grid column-->
         <div class="col-auto mb-4 mb-md-0">
-          <p class="pt-2"><strong>Suscribase para estar informado</strong></p>
+          <p class="pt-2"><strong>Suscribirse:</strong></p>
         </div>
         <!--Grid column-->
 
@@ -170,7 +166,7 @@
           <!-- Email input -->
           <div class="form-outline mb-4">
             <input type="email" id="form5Example2" class="form-control" />
-            <label class="form-label" for="form5Example2">Direccion de correo</label>
+            <label class="form-label" for="form5Example2">Dirección de correo</label>
           </div>
         </div>
         <!--Grid column-->
@@ -200,6 +196,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   
+
   </body>
 </html>
